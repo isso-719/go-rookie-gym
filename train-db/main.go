@@ -20,6 +20,7 @@ func main() {
 		return
 	}
 
+	// ISUCON の再起動試験とかの時に必要
 	if err := db.PingContext(context.Background()); err != nil {
 		log.Printf("failed to ping err = %s", err.Error())
 		return
